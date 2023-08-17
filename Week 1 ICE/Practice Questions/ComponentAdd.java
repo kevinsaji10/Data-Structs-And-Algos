@@ -1,12 +1,5 @@
-// Let B be an array of size n ≥ 6 containing integers from 1 to n − 5 inclusive, five of which are
-// repeated.
-// For e.g. if n is 7, the array would contain integers 1 to 2, and this array would contain an integer (1 or
-// 2) which is repeated another 5 times, thus total 6 occurrences of this integer in the array.
-// One possible array would contain 1, 1, 1, 1, 1, 1, 2.
-// Another possibility is 1, 2, 2, 2, 2, 2, 2.
-// a. Describe an algorithm for finding the five integers in B that are repeated.
-// b. Track a specific operator (e.g., >, +, −) that occurs the most often in your algorithm. How
-// many times does it repeat?
+// add the elements in the corresponding slots in the 3d arrays
+
 import java.util.*;
 public class ComponentAdd {
     public static void adder(int[][][] arr1, int[][][] arr2) {
