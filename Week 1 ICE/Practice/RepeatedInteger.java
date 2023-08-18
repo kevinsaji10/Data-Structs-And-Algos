@@ -12,8 +12,8 @@ import java.util.*;
 
 public class RepeatedInteger {
     public static void repeatTracker(int[] arr) {
-        // create a new hashset to store repeated integers
-        Map<Integer, Integer> map = new HashMap<>();
+        // create a new hashset to store repeated integers indexes
+        Set<Integer> set = new HashSet<>();
         // to track the number of times + operator is used.
         int addCounter = 0;
         int repeatedInteger = 0;
@@ -24,7 +24,7 @@ public class RepeatedInteger {
                 addCounter++;
                 if (arr[i] == arr[j] && i != j) {
                     repeatedInteger = arr[i];
-                    map.put(i, arr[i]);
+                    set.add(i);
 
                     break;
                 }
@@ -33,14 +33,14 @@ public class RepeatedInteger {
         // printing output
         System.out.println("Repeated integer is: " + repeatedInteger);
         System.out.println("Repeated integers indexes:");
-        for (Integer i : map.keySet()) {
+        for (Integer i : set) {
             System.out.println(i);
         }
         System.out.println("Number of times the + operator is used in this algorithm: " + addCounter);
     }
     public static void main(String[] args) {
         
-        int[] arr = {1, 2, 2, 2, 2, 2, 2};
+        int[] arr = {2, 2, 2, 1, 2, 2, 2};
         repeatTracker(arr);
     }
     

@@ -14,8 +14,8 @@ public class ComponentAdd {
                 }
             }
         }
-        // printing output
-        System.out.println("Number of times + operator was used: " + addCounter);
+        // printing output (counting + operators in execution)
+        System.out.println("Number of times + operator was used in execution: " + addCounter);
         System.out.println(Arrays.deepToString(arr1));
 
         
